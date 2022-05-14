@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ifood_kotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="passWord">PassWord</string>
+    <string name="text_logar">Manter Logado</string>
+    <string name="text_cadastrar">Cadastre-se</string>
+</resources>
