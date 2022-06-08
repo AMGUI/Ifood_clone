@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadastroFragment">
+    android:background="@color/BackFood"
+    tools:context=".views.fragments.CadastroFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dm_logo_cadastro_hei"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/marg_padrao"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-</FrameLayout>
+        <EditText
+            android:id="@+id/editTextfirstEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_long"
+            android:background="@drawable/layout_text"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding_padrao" />
+
+        <EditText
+            android:id="@+id/fistTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_long"
+            android:background="@drawable/layout_text"
+            android:ems="10"
+            android:hint="@string/passWord"
+            android:inputType="textPassword"
+            android:padding="@dimen/padding_padrao" />
+
+        <EditText
+            android:id="@+id/confirmTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_long"
+            android:background="@drawable/layout_text"
+            android:ems="10"
+            android:hint="@string/passWord"
+            android:inputType="textPassword"
+            android:padding="@dimen/padding_padrao" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_long"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_padrao"
+                android:theme="@style/botao_padrao"
+                android:layout_weight="1"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/buttonCadas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_padrao"
+                android:theme="@style/botao_padrao"
+                android:layout_weight="1"
+                android:text="Cadastrar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

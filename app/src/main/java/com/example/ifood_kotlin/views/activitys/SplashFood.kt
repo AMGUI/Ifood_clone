@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import com.example.ifood_kotlin.R
 import com.example.ifood_kotlin.databinding.ActivitySplashFoodBinding
@@ -16,6 +17,9 @@ class SplashFood : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashFoodBinding.inflate(layoutInflater)
         val view = binding.root
+
+
+
         setContentView(view)
 
 
@@ -28,6 +32,8 @@ class SplashFood : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             binding.textClone.setTextColor(Color.WHITE)
             binding.textClone.startAnimation(textAnimation)
+
+
         },1510)
 
         Handler(Looper.getMainLooper()).postDelayed({

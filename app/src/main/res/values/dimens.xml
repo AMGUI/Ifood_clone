@@ -5,4 +5,5 @@
     <dimen name="epaço_padrao_lenar">16dp</dimen>
     <dimen name="marg_padrao">15dp</dimen>
     <dimen name="padding_padrao">5dp</dimen>
+    <dimen name="marg_long">30dp</dimen>
 </resources>
